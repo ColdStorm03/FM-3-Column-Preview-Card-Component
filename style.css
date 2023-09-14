@@ -22,33 +22,58 @@
 
 body {
     background-color: var(--Very-light-gray-background-headings-buttons);
+    min-height: 100vh;
+    font-size: var(--fs-medium);
 }
 
 .card {
+    min-height: inherit;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    margin: 40px 20px;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .sub-card {
-    
+    padding: 35px 35px 60px;
+}
+
+.gap {
+    margin: 20px;
 }
 
 .car-type {
     color: var(--Very-light-gray-background-headings-buttons);
     font-family: var(--ff-title-bolder);
+    text-transform: uppercase;
+    font-size: 2.5rem;
 }
 
 .car-info {
     color: var(--Transparent-white-paragraphs);
     font-family: var(--ff-passage-medium);
+    line-height: 25px;
+    margin-bottom: 45px;
 }
 
 .learn-more {
     font-family: var(--ff-passage-medium);
     text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 40px;
     background-color:var(--Very-light-gray-background-headings-buttons);
+    color: inherit;
+    mix-blend-mode: screen;
+}
+
+.learn-more:hover {
+    color: var(--Very-light-gray-background-headings-buttons);
+    border: 2px solid var(--Very-light-gray-background-headings-buttons);
+    background: transparent;
+    cursor: pointer;
 }
 
 .sedan {
