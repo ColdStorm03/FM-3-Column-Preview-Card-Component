@@ -1,0 +1,70 @@
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+
+    --ff-title-bolder: 'Big Shoulders Display', cursive;
+    --ff-passage-medium: 'Lexend Deca', sans-serif;
+
+    --fw-bold: 400;
+    --fw-bolder: 700;
+
+    --fs-medium: 15px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Very-light-gray-background-headings-buttons);
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+.sub-card {
+    
+}
+
+.car-type {
+    color: var(--Very-light-gray-background-headings-buttons);
+    font-family: var(--ff-title-bolder);
+}
+
+.car-info {
+    color: var(--Transparent-white-paragraphs);
+    font-family: var(--ff-passage-medium);
+}
+
+.learn-more {
+    font-family: var(--ff-passage-medium);
+    text-decoration: none;
+    background-color:var(--Very-light-gray-background-headings-buttons);
+}
+
+.sedan {
+    background-color: var(--Bright-orange);
+}
+
+.suv {
+    background-color: var(--Dark-cyan);
+}
+
+.luxury {
+    background-color: var(--Very-dark-cyan);
+}
+
+
+
+
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
