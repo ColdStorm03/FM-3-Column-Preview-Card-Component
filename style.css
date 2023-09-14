@@ -25,13 +25,12 @@ body {
     min-height: 100vh;
     font-size: var(--fs-medium);
 }
-
 .card {
     min-height: inherit;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     margin: 40px 20px;
     border-radius: 8px;
     overflow: hidden;
@@ -39,6 +38,8 @@ body {
 
 .sub-card {
     padding: 35px 35px 60px;
+    max-width: 335px;
+    height: 450px;
 }
 
 .gap {
@@ -88,6 +89,34 @@ body {
     background-color: var(--Very-dark-cyan);
 }
 
+@media (min-width: 500px) {
+
+    .card {
+        margin: 0 0;
+    }
+
+    .sub-card {
+        height: 490px;
+        width: 320px;
+        max-width: 320px;
+        max-height: 600px;
+    }
+
+    .car-info {
+        margin-bottom: 80px;
+    }
+
+    @media (min-width: 1001px) {
+        .sedan {
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
+        .luxury {
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+    }
+}
 
 
 
